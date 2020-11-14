@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <title>Изучаем jQuary</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!--<script type="text/javascript">
+    $(document).ready(function () {
+        //Если кликаем на add_comment
+        $(document).on("click", "#add_comment", function () {
+            let form = $("form[name='form']");
+            //Меняем css и наша форма показывается
+            form.css("display", "block");
+            $("#add_comment").replaceWith(form);
+        });
+        $(document).on("click", "input[name='send']", function () {
+            let comment = $("textarea[name='comment']").val();
+            //имитируем загрузку комментариев
+            alert("Подождите, идет загрузка комментариев...");
+            $("<p>" +comment + "</p>").appendTo("div#comments");
+
+        });
+
+    });
+</script>-->
+
+</head>
+<body>
+
+<div class="container" id="comments">
+    <div class="row">
+        <div class="col-lg-12">
+            <h2 class="text-center">Comments</h2>
+        </div>
+        <div class="col-lg-6">
+            <!-поле для вывода комментариев->
+            <div id="comment-field"></div>
+        </div>
+            <form>
+                <!--Имя-->
+                <div class="form-group">
+                    <label for="comment-name">Name: </label>
+                    <input type="name" class="form-control" id="comment-name" placeholder="Your name">
+                </div>
+                <!--Комментарий-->
+                <div class="form-group">
+                    <label for="comment-body">Comment: </label>
+                    <input type="comment" class="fopm-control" id="comment-body" placeholder="Your comment">
+
+                </div>
+                <!--Кнопка-->
+                <div class="form-group text-right">
+                    <button type="submit" id="comment-add" class="btn btn-primary">add Comment</button>
+
+                </div>
+            </form>
+            <!--<form name="form" id="form" action="#" method="post" style="display: none" onsubmit="return false">
+                <textarea id="textarea" name="comment" cols="30" rows="10"></textarea>
+                <input type="submit" name="send" value="Добавить комментарий" id="done">
+            </form>-->
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+<script src="29.js"></script>
+<!--<a href="#" onclick="return false" id="add_comment">Добавить комментарий</a>-->
+</body>
+</html>
